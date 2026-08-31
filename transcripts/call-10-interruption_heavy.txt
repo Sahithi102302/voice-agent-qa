@@ -1,0 +1,35 @@
+Call: call-10-interruption_heavy
+Persona: Marcus Webb (impatient, wants quick appointment for back pain)
+Call SID: CAc0c3f23d7b2f836b2b85778e250173b4
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thank you for calling Pivot Point Orthopedics. How may I help
+you today?
+
+PATIENT (bot): Yeah, hi, I need an appointment fast — back pain.
+
+AGENT: Sure. What's the reason for the visit today, and would you
+like— [interrupted]
+
+PATIENT (bot): Sure, sure, so what do you have available?
+
+AGENT: —for it? Would you rather book online?
+
+PATIENT (bot): Yeah okay, so can we do tomorrow?
+
+AGENT: I understand you're in a hurry. Let me quickly check
+availability...
+
+AGENT: ...I don't have any same-day...
+
+[No further agent response — long silence — call ends without
+resolution or goodbye]
+
+---
+
+BUG FOUND: The agent's responses became fragmented after repeated
+interruptions from the caller, and it eventually stopped responding
+altogether before the call ended. No appointment was booked, and the
+call did not end with a proper goodbye. See bug_report.md, Bug 3.

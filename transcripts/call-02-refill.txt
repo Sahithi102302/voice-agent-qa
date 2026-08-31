@@ -1,0 +1,40 @@
+Call: call-02-refill
+Persona: Priya Nair (requesting a prescription refill)
+Call SID: CAbaa9e00ecc3078e63cf7c5bbf70d609c
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thank you for calling Pivot Point Orthopedics. How may I help
+you today?
+
+PATIENT (bot): Hi, this is Priya Nair. I need a refill on the pain
+medication Dr. Whitfield prescribed after my hip surgery last month.
+
+AGENT: Am I speaking with Maria?
+
+PATIENT (bot): No, this is Priya Nair.
+
+AGENT: Could you spell your first and last name for me?
+
+PATIENT (bot): P-R-I-Y-A N-A-I-R.
+
+AGENT: I have a phone number on file — two one three eight eight
+three seven six five six. Is that correct?
+
+PATIENT (bot): Yes, that's correct.
+
+AGENT: I'm unable to find your record in our system right now. I'll
+connect you to our patient support team.
+
+AGENT: Transferring you now. Thank you.
+
+AGENT: Hello. You've reached the Pretty Good AI test line. Goodbye.
+
+PATIENT (bot): Thank you! Goodbye!
+
+---
+
+BUG FOUND: Same pattern as call-09 — identity confusion ("Maria"),
+record lookup failure, dead-end transfer, refill request never
+resolved. See bug_report.md, Bug 2.

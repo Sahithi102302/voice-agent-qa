@@ -1,0 +1,41 @@
+Call: call-04-vague_request-retry
+Persona: Linda Park (unsure what kind of appointment she needs)
+Call SID: CA9ea34c6d218b76a47f344bfefa240e3d
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thank you for calling Pivot Point Orthopedics. How may I help
+you today?
+
+PATIENT (bot): I'm not really sure what I need. My knee's been
+hurting again.
+
+AGENT: Am I speaking with Maria?
+
+PATIENT (bot): No, I'm not sure who I'm speaking with — this is Linda
+Park.
+
+AGENT: Could you provide your full name and date of birth?
+
+PATIENT (bot): Linda Park, September 9, 1958.
+
+AGENT: One moment while I look up your record.
+
+AGENT: I'm unable to find your record in our system right now. I'll
+connect you to our patient support team so they can help you directly.
+Please stay on the line.
+
+AGENT: Transferring you now. Thank you.
+
+AGENT: Hello. You've reached the Pretty Good AI test line. Goodbye.
+
+PATIENT (bot): Thank you! Goodbye!
+
+---
+
+BUG FOUND: This call gives the clearest explicit statement of the
+failure ("I'm unable to find your record in our system right now")
+followed by a transfer that dead-ends. Notably, the "Maria" mix-up did
+NOT repeat as strongly this time — the agent moved on without pushing
+back after the caller deflected. See bug_report.md, Bug 2.

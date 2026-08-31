@@ -1,0 +1,52 @@
+Call: call-03-vague_request
+Persona: Linda Park (unsure what kind of appointment she needs)
+Call SID: CA469b8c166b0c922fe2669252947d6e5b
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thank you for calling Pivot Point Orthopedics. How may I help
+you today?
+
+PATIENT (bot): I'm not really sure what I need. My knee's been
+hurting again.
+
+AGENT: Would you like to schedule a visit, or do you have questions
+about treatment?
+
+PATIENT (bot): I think I need an appointment, but I'm not sure if it's
+a follow-up or something new.
+
+AGENT: Am I speaking with Maria?
+
+PATIENT (bot): No, this is Linda Park.
+
+AGENT: Could you provide your full name and date of birth, then spell
+your name for me?
+
+PATIENT (bot): Linda Park, September 9, 1958. L-I-N-D-A P-A-R-K.
+
+AGENT: Could you confirm your phone number, or should I re-confirm
+your name and date of birth?
+
+PATIENT (bot): I'm not sure what number, maybe you can check what you
+have?
+
+AGENT: Could you spell your name again please?
+
+PATIENT (bot): L-I-N-D-A P-A-R-K.
+
+AGENT: I have your number as [garbled digits]. One moment while I
+look up your record.
+
+AGENT: I'll transfer you now.
+
+AGENT: Hello. You've reached the Pretty Good AI test line. Goodbye.
+
+PATIENT (bot): Thank you! Goodbye!
+
+---
+
+BUG FOUND: Same identity-confusion and record-lookup-failure pattern.
+Caller's actual concern (uncertain knee issue) never addressed. See
+bug_report.md, Bug 2.

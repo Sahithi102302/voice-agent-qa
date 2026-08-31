@@ -1,0 +1,41 @@
+Call: call-05-interruption_heavy
+Persona: Marcus Webb (impatient, wants quick appointment for back pain)
+Call SID: CAadef89c7b2f191f0c320f6ca020599cb
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thank you for calling Pivot Point Orthopedics. How may I help
+you today?
+
+PATIENT (bot): Hey, I need an appointment as soon as possible — back
+pain, it's pretty bad.
+
+AGENT: I'm sorry to hear that. Could I get your name and date of
+birth?
+
+PATIENT (bot): Marcus Webb, February 17, 1980.
+
+AGENT: And a callback number in case we get disconnected?
+
+PATIENT (bot): Sure, it's 555-0123.
+
+AGENT: So what do you have available for an appointment?
+
+AGENT: I'm unable to find your record in our system, so I can't
+schedule the appointment right now. I can connect you to our patient
+support team for help.
+
+AGENT: Transferring you now. Thank you.
+
+AGENT: Hello. You've reached the Pretty Good AI test line. Goodbye.
+
+PATIENT (bot): Thank you! Goodbye!
+
+---
+
+BUG FOUND: Same record-lookup failure pattern. Additionally, the agent
+accepted a caller-stated phone number (555-0123, a fictional-looking
+number) without any apparent cross-check against the actual caller ID
+of the call. See bug_report.md, Bug 2 and the minor "phone number not
+validated" observation.

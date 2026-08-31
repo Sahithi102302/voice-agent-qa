@@ -1,0 +1,38 @@
+Call: call-11-first_time_caller
+Persona: Jason Kim (brand-new patient, first-ever call on this number under this name)
+Call SID: CA67865ff392e8806109d0148ae068f711
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thank you for calling Pivot Point Orthopedics. How may I help
+you today?
+
+PATIENT (bot): Hi, this is Jason Kim. I'm a new patient and I'd like
+to schedule a consultation for wrist pain.
+
+AGENT: Could I get your date of birth?
+
+PATIENT (bot): August 8, 1998.
+
+AGENT: Thank you, Jason. We have an opening Wednesday at 10 AM — would
+that work?
+
+PATIENT (bot): Yes, that works great.
+
+AGENT: You're confirmed for Wednesday at 10 AM. Anything else?
+
+PATIENT (bot): No, that's all, thank you!
+
+AGENT: You're welcome. Have a great day.
+
+PATIENT (bot): You too, thanks!
+
+---
+
+RESULT: Clean, fully successful call on the FIRST attempt for a
+completely new identity never previously used on this phone number.
+This is the key CONTROL CASE in bug_report.md, Bug 2 — it confirms the
+record-lookup failure is not a general new-patient defect, but is
+specifically tied to phone numbers with prior conflicting call history
+under multiple different names.

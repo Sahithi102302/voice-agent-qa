@@ -1,0 +1,35 @@
+Call: call-07-insurance_hours
+Persona: Tom Bradley (asking about insurance and office hours, not booking)
+Call SID: CA9ed9950888ff1bbbd01aa0d0de1f8e69
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thank you for calling Pivot Point Orthopedics. How may I help
+you today?
+
+PATIENT (bot): Hi, I'm just looking for some information before
+booking. Do you accept Blue Cross Blue Shield?
+
+AGENT: Yes, we accept most insurance plans, including Blue Cross Blue
+Shield.
+
+PATIENT (bot): Great, could you also tell me your office hours? Are
+you open on weekends?
+
+AGENT: We're open Monday through Friday. We're closed on weekends.
+Would you like specific hours for a particular day?
+
+PATIENT (bot): No, that's okay, thank you! I'll call back once I
+confirm my insurance.
+
+AGENT: You're welcome. Feel free to call anytime.
+
+PATIENT (bot): You too, thanks!
+
+---
+
+RESULT: Clean, successful call with no record lookup required. Used as
+a CONTROL CASE in bug_report.md, Bug 2 — confirms the record-lookup
+failure is isolated to identity-dependent flows, not a general system
+instability.

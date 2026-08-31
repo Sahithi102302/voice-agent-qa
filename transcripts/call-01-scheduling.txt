@@ -1,0 +1,56 @@
+Call: call-01-scheduling
+Persona: Maria Chen (scheduling a knee follow-up appointment)
+Call SID: CAd6e1da07c6d093a7720d7460bb612bb7
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: This call may be recorded... Thank you for calling Pivot Point
+Orthopedics. Would you like to create a demo patient profile? I just
+need your first and last name.
+
+PATIENT (bot): My name is Maria Chen.
+
+AGENT: Your patient profile has been created, and your date of birth
+is July 4, 2000 for demo purposes. How may I help you today?
+
+PATIENT (bot): I would like to schedule a follow-up appointment for my
+knee.
+
+AGENT: Confirming: follow-up visit after a previous appointment for
+your knee?
+
+PATIENT (bot): Yes, that's correct.
+
+AGENT: Specific provider, or open to anyone?
+
+PATIENT (bot): I'm open to any available provider.
+
+AGENT: Several openings this Friday. Morning or afternoon?
+
+PATIENT (bot): I prefer the afternoon if possible.
+
+AGENT: 1PM with Doobie Hauser, Carl Mentz, or Kelly Noble?
+
+PATIENT (bot): I'll go with 1PM with Kelly Noble, please.
+
+AGENT: Confirmed: Friday, Aug 28, 1PM with Kelly Noble, MD. Bring photo
+ID, insurance card, medications list, imaging discs. Want a text
+confirmation?
+
+PATIENT (bot): Yes, please send me a text with the details.
+
+AGENT: Text sent. Anything else?
+
+PATIENT (bot): No, that's all. Thank you so much!
+
+AGENT: You're all set. Have a great day.
+
+PATIENT (bot): You too! Thank you!
+
+---
+
+BUG FOUND: Agent fabricated a date of birth ("July 4, 2000, for demo
+purposes") without ever asking the caller for their actual date of
+birth, despite only collecting first and last name. See bug_report.md,
+Bug 1.

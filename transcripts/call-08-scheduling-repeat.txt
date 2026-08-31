@@ -1,0 +1,39 @@
+Call: call-08-scheduling-repeat
+Persona: Maria Chen (scheduling — repeat caller with existing record)
+Call SID: CA0f0c8a1cb623165a1b68bcd4989baaee
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thank you for calling Pivot Point Orthopedics. How may I help
+you today?
+
+PATIENT (bot): Hi, this is Maria Chen. I'd like to make a change to my
+appointment.
+
+AGENT: I see you have an appointment on file for Tuesday, September 8
+at 1 PM. Would you like to reschedule this?
+
+PATIENT (bot): Yes, could we move it to Monday, August 31 at 1 PM
+instead?
+
+AGENT: I've rescheduled your appointment to Monday, August 31 at 1 PM.
+Would you like a text confirmation?
+
+PATIENT (bot): Yes, please.
+
+AGENT: Text sent. Anything else I can help with?
+
+PATIENT (bot): No, that's all, thank you!
+
+AGENT: You're welcome. Have a great day.
+
+PATIENT (bot): You too!
+
+---
+
+RESULT: Clean, fully successful call — the agent found an existing
+record immediately with no lookup failure. Used as supporting evidence
+in bug_report.md, Bug 2: this caller already had an established,
+unambiguous record (from an earlier successful interaction), which
+succeeded where fresh/ambiguous lookups failed.

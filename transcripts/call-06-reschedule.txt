@@ -1,0 +1,38 @@
+Call: call-06-reschedule
+Persona: David Okafor (rescheduling an upcoming appointment)
+Call SID: CAca11661de7c72cb22418dd1c4c2db25f
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thank you for calling Pivot Point Orthopedics. How may I help
+you today?
+
+PATIENT (bot): Hi, this is David Okafor. I need to reschedule my
+appointment this Thursday — something came up at work.
+
+AGENT: Could I get your date of birth to pull up your record?
+
+PATIENT (bot): November 2, 1984.
+
+AGENT: Just to confirm, I have your name as David Oakfer.
+
+PATIENT (bot): It's actually Okafor.
+
+AGENT: One moment while I look up your record.
+
+AGENT: I'm unable to find your record in our system right now. I'll
+connect you to our patient support team.
+
+AGENT: Transferring you now. Thank you.
+
+AGENT: Hello. You've reached the Pretty Good AI test line. Goodbye.
+
+PATIENT (bot): Thank you! Goodbye!
+
+---
+
+BUG FOUND: Same record-lookup failure pattern. Additionally, the
+agent's own transcription slightly mangled the caller's surname
+("Okafor" heard as "Oakfer") during confirmation. See bug_report.md,
+Bug 2.

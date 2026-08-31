@@ -1,0 +1,65 @@
+Call: call-09-refill
+Persona: Priya Nair (requesting a prescription refill)
+Call SID: CA12d5baddedc916fbed211d2469386a6a
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: This call may be recorded... Thank you for calling Pivot Point
+Orthopedics. Part of Pretty Good AI. How may I help you today?
+
+PATIENT (bot): Hi, this is Priya Nair. I need a refill on the pain
+medication Dr. Whitfield prescribed after my hip surgery last month.
+
+AGENT: I see you're calling from the number we have on file. Am I
+speaking with Maria?
+
+PATIENT (bot): No, this is actually Priya Nair.
+
+AGENT: Please provide your full name and date of birth.
+
+PATIENT (bot): My name is Priya Nair, and my date of birth is June 21,
+1967.
+
+AGENT: Just to confirm, can you please spell your first and last name
+for me?
+
+PATIENT (bot): Sure, it's P-R-I-Y-A N-A-I-R.
+
+AGENT: Would you like me to look up your record using the phone number
+you have on file with us? If so, please tell me that number. If you're
+not sure, I can confirm your name and date of birth again. Which would
+you prefer?
+
+PATIENT (bot): You can use my name and date of birth to look it up.
+
+AGENT: Let's confirm your details one more time. Please spell your
+first and last name again. And confirm your date of birth.
+
+PATIENT (bot): My first name is spelled P-R-I-Y-A, last name N-A-I-R,
+and my date of birth is June 21, 1967.
+
+AGENT: I have your phone number as one three eight eight three seven
+six five six and your date of birth as June twenty first nineteen
+sixty seven. Is that correct?
+
+PATIENT (bot): Yes, that's correct.
+
+AGENT: I'm unable to find your record in our system right now. I'll
+connect you to our patient support team for help with your medication
+refill. Please stay on the line. Transferring you now. Thank you.
+
+PATIENT (bot): Thank—
+
+AGENT: Hello. You've reached the Pretty Good AI test line. Goodbye.
+
+PATIENT (bot): Goodbye!
+
+---
+
+BUG FOUND: (1) Agent again assumed caller was "Maria" based on caller
+ID despite the caller stating a different name. (2) Agent's read-back
+of the phone number was garbled/incoherent. (3) Record lookup failed
+and the subsequent "transfer" led to an automated dead end, never
+resolving the refill request. See bug_report.md, Bug 2 (primary
+example call).

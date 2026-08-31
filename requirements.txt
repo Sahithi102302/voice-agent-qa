@@ -1,0 +1,6 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+twilio==9.3.2
+python-dotenv==1.0.1
+pipecat-ai[silero,deepgram,cartesia,openai,websocket,runner]
+loguru==0.7.2
