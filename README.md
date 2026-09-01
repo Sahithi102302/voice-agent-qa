@@ -6,11 +6,15 @@ order to test it for bugs and quality issues. Built for the Pretty Good AI
 AI Engineering Challenge, testing their voice agent for Pivot Point
 Orthopedics.
 
-The bot plays one of several simulated "patient" personas (scheduling,
-rescheduling, prescription refills, insurance/hours questions, and
-deliberately ambiguous or interruption-heavy callers), has a real spoken
-conversation with the target system, and records/transcribes the call for
-review.
+The bot plays one of nine simulated "patient" personas — covering
+scheduling, rescheduling, prescription refills, insurance/hours questions,
+ambiguous requests, interruption-heavy callers, an urgent same-day request,
+and a caller who self-corrects mid-call — has a real spoken conversation
+with the target system, and records/transcribes each call for review.
+Testing surfaced a critical-severity finding (no urgency triage for acute
+patient requests) and a high-severity, root-caused system failure (patient
+record lookups failing for callers sharing a phone number with prior
+different-named callers). See `bug_report.md` for full details.
 
 ## Architecture at a glance
 
