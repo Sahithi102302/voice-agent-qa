@@ -1,0 +1,88 @@
+Call: call-13-contradictory_info
+Persona: Robert Nguyen (self-corrects date of birth mid-call)
+Target: +18054398008 (Pretty Good AI / Pivot Point Orthopedics)
+
+---
+
+AGENT: Thanks for calling Pivot Point Orthopedics. Part of Pretty Good
+AI. How may I help you today?
+
+PATIENT (bot): Hi, I'm calling to schedule a follow-up appointment for
+my shoulder issue.
+
+AGENT: I see you're calling from the number we have on file. Am I
+speaking with Maria?
+
+PATIENT (bot): I'm not sure, but I'd like to schedule that appointment,
+if possible.
+
+AGENT: No problem. Can you please provide your full name and date of
+birth?
+
+PATIENT (bot): Sure, my name is Robert Nguyen, and my date of birth is
+May 5, 1975.
+
+AGENT: Thank you. Just to confirm, is your full name Robert... and can
+you confirm the spelling of your last name?
+
+PATIENT (bot): Actually, sorry, I think I said that wrong — it's May
+5, 1973. My last name is spelled N-G-U-Y-E-N.
+
+AGENT: Just to confirm, I have your name as Robert Nguyen, and your
+date of birth as May fifth nineteen seventy three. Is that correct?
+
+PATIENT (bot): Yes, that's correct. Thank you for confirming.
+
+AGENT: One moment while I look up your information. Would you like to
+use your phone number to help look up your record? If so, please
+provide the number you have on file with us.
+
+PATIENT (bot): You can use the number I'm calling from. Would that
+work?
+
+AGENT: Yes, I can use the number you're calling from, which is two one
+three eight eight three seven six five six. Let me check your record
+now. I have your phone number as two one three eight eight three seven
+six five six, and your date of birth as May fifth nineteen seventy
+three. Is that correct?
+
+PATIENT (bot): Yes, that's correct. Thank you for checking.
+
+AGENT: You're welcome. Let me finish looking up your information. One
+moment. I'm unable to locate your record in our system right now. I
+can connect you to our patient support team for help. Would you like
+me to transfer you?
+
+PATIENT (bot): No, that's okay. Can we try scheduling the appointment
+again?
+
+AGENT: I'm unable to schedule the appointment without first locating
+your record. Would you like me to document your request so our clinic
+support team can follow up with you?
+
+PATIENT (bot): Yes, that would be great! Thank you for helping with
+that.
+
+AGENT: Since I can't create a follow-up record while support is
+available, I recommend connecting you to our patient support team for
+help. Would you like me to transfer you now?
+
+PATIENT (bot): If that's the best option, then yes, please transfer
+me. Thank you.
+
+AGENT: Transferring you now. Thank you.
+
+AGENT: Hello. You've reached the Pretty Good AI test line. Goodbye.
+
+PATIENT (bot): Goodbye!
+
+---
+
+RESULT / BUG FOUND: The agent correctly registered the caller's
+mid-call self-correction (May 5, 1975 -> May 5, 1973), confirming the
+corrected value accurately in later turns — this part worked well.
+However, once the record lookup failed, the agent's recovery path was
+inconsistent and briefly self-contradictory (offering to "document the
+request," then in the same turn stating it needed to transfer instead)
+before funneling to the same dead-end transfer regardless of the
+caller's responses. See bug_report.md, Bug 2 (additional observation).
